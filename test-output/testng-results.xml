@@ -2,19 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-13T14:48:39 IST" name="Default suite" finished-at="2022-07-13T14:49:09 IST" duration-ms="29942">
+  <suite started-at="2022-07-13T14:55:43 IST" name="Default suite" finished-at="2022-07-13T14:56:01 IST" duration-ms="17069">
     <groups>
     </groups>
-    <test started-at="2022-07-13T14:48:39 IST" name="Default test" finished-at="2022-07-13T14:49:09 IST" duration-ms="29942">
+    <test started-at="2022-07-13T14:55:43 IST" name="Default test" finished-at="2022-07-13T14:56:01 IST" duration-ms="17069">
       <class name="loginTest.LoginTestCase">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:loginTest.LoginTestCase@149e0f5d]" started-at="2022-07-13T14:48:37 IST" name="launchApp" finished-at="2022-07-13T14:48:39 IST" duration-ms="1763" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:loginTest.LoginTestCase@2f7c2f4f]" started-at="2022-07-13T14:55:42 IST" name="launchApp" finished-at="2022-07-13T14:55:43 IST" duration-ms="1479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="LoginTc()[pri:0, instance:loginTest.LoginTestCase@149e0f5d]" started-at="2022-07-13T14:48:39 IST" name="LoginTc" finished-at="2022-07-13T14:49:09 IST" duration-ms="29911" status="PASS">
+        <test-method signature="LoginTc()[pri:0, instance:loginTest.LoginTestCase@2f7c2f4f]" started-at="2022-07-13T14:55:43 IST" name="LoginTc" finished-at="2022-07-13T14:56:00 IST" duration-ms="17041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTc -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:loginTest.LoginTestCase@2f7c2f4f]" started-at="2022-07-13T14:56:01 IST" name="afterSuite" finished-at="2022-07-13T14:56:01 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- loginTest.LoginTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
