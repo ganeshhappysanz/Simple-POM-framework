@@ -14,7 +14,6 @@ public class Manipulation extends Baseclass implements ActionInterFace {
 			flag = ele.isDisplayed();
 			ele.clear();
 			ele.sendKeys(text);
-			// logger.info("Entered text :"+text);
 			flag = true;
 		} catch (Exception e) {
 			System.out.println("Location Not found");
@@ -43,13 +42,13 @@ public class Manipulation extends Baseclass implements ActionInterFace {
 		}
 
 	}
-	
-	public String getCurrentURL(WebDriver driver)  {
+
+	public String getCurrentURL(WebDriver driver) {
 		boolean flag = false;
 
 		String text = driver.getCurrentUrl();
 		if (flag) {
-			System.out.println("Current URL is: \""+text+"\"");
+			System.out.println("Current URL is: \"" + text + "\"");
 		}
 		return text;
 	}
