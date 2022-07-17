@@ -31,14 +31,17 @@ public class LoginTestCase extends Manipulation {
 	public void LoginTc(String uname, String pswd) throws Throwable {
 		pages = PageFactory.initElements(getDriver(), LoginPage.class);
 		Log.startTestCase("loginTest");
-		Log.info("user is going to click on SignIn");
+		Log.info("Verifying if user is able to login");
 		Log.info("Enter Username and Password");
 		pages.login(uname, pswd);
-		String actualURL = getDriver().getCurrentUrl();
-		String expectedURL = getCurrentURL(getDriver());
-		Log.info("Verifying if user is able to login");
-		Assert.assertEquals(actualURL, expectedURL);
 		Log.info("Login is Sucess");
+		String actualURL = getDriver().getCurrentUrl();
+		Log.info("Current URL is:"+actualURL);
+		String expectedURL = getCurrentURL(getDriver());
+		Log.info("User After Logged in that page URL is:  "+expectedURL);
+		Assert.assertEquals(actualURL, expectedURL);
+		Log.info("Current Page URL and Landing page URL Should be same");
+		
 		Log.endTestCase("loginTest");
 
 	}

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-17T17:20:04 IST" name="Suite" finished-at="2022-07-17T17:20:15 IST" duration-ms="11636">
+  <suite started-at="2022-07-17T17:32:26 IST" name="Suite1" finished-at="2022-07-17T17:32:39 IST" duration-ms="12424">
     <groups>
       <group name="Smoke">
-        <method signature="LoginTestCase.LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" name="LoginTc" class="com.myproject.loginTest.LoginTestCase"/>
+        <method signature="LoginTestCase.LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" name="LoginTc" class="com.myproject.loginTest.LoginTestCase"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-07-17T17:20:04 IST" name="Tes Login" finished-at="2022-07-17T17:20:15 IST" duration-ms="11636">
+    <test started-at="2022-07-17T17:32:26 IST" name="Smoke" finished-at="2022-07-17T17:32:39 IST" duration-ms="12424">
       <class name="com.myproject.loginTest.LoginTestCase">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" started-at="2022-07-17T17:20:03 IST" name="loadConfig" finished-at="2022-07-17T17:20:04 IST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:26 IST" name="loadConfig" finished-at="2022-07-17T17:32:26 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" started-at="2022-07-17T17:20:04 IST" name="setup" finished-at="2022-07-17T17:20:09 IST" duration-ms="5289" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:27 IST" name="setup" finished-at="2022-07-17T17:32:32 IST" duration-ms="5543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" started-at="2022-07-17T17:20:09 IST" name="LoginTc" data-provider="credentials" finished-at="2022-07-17T17:20:15 IST" duration-ms="5778" status="PASS">
+        <test-method signature="LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:32 IST" name="LoginTc" data-provider="credentials" finished-at="2022-07-17T17:32:39 IST" duration-ms="6344" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" started-at="2022-07-17T17:20:15 IST" name="tearDown" finished-at="2022-07-17T17:20:15 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:39 IST" name="tearDown" finished-at="2022-07-17T17:32:39 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myproject.loginTest.LoginTestCase@4d9e68d0]" started-at="2022-07-17T17:20:15 IST" name="afterSuite" finished-at="2022-07-17T17:20:16 IST" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:39 IST" name="afterSuite" finished-at="2022-07-17T17:32:39 IST" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.myproject.loginTest.LoginTestCase -->
-    </test> <!-- Tes Login -->
-  </suite> <!-- Suite -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Suite1 -->
 </testng-results>
