@@ -6,10 +6,9 @@
       <class name="com.myproject.loginTest.LoginTestCase">
         <methods>
           <include name="loadConfig"/>
-          <include name="LoginTc"/>
           <include name="setup"/>
           <include name="afterSuite"/>
-          <include name="tearDown"/>
+          <include name="loginTestcase"/>
         </methods>
       </class> <!-- com.myproject.loginTest.LoginTestCase -->
     </classes>

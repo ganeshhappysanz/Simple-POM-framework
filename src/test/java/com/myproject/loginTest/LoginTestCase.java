@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.myproject.action.Manipulation;
 import com.myproject.dataprovider.DataProviders;
+import com.myproject.pageobjects.AddPatient;
 import com.myproject.pageobjects.LoginPage;
 import com.myproject.utility.Log;
 
@@ -22,28 +23,20 @@ public class LoginTestCase extends Manipulation {
 		launchApp(browser);
 	}
 
-	@AfterMethod(groups = { "Smoke"})
+	@AfterMethod(groups = { "Smoke" })
 	public void tearDown() {
 		getDriver().quit();
 	}
 
-	@Test(groups = {"Smoke"},dataProvider = "credentials", dataProviderClass = DataProviders.class)
-	public void LoginTc(String uname, String pswd) throws Throwable {
+	@Test(groups = { "Smoke" }, dataProvider = "loginDetails", dataProviderClass = DataProviders.class, priority = 1)
+	public void loginTestcase(String organizationId, String Email, String Password) throws Throwable {
 		pages = PageFactory.initElements(getDriver(), LoginPage.class);
-		Log.startTestCase("loginTest");
-		Log.info("Verifying if user is able to login");
-		Log.info("Enter Username and Password");
-		pages.login(uname, pswd);
-		Log.info("Login is Sucess");
-		String actualURL = getDriver().getCurrentUrl();
-		Log.info("Current URL is:"+actualURL);
-		String expectedURL = getCurrentURL(getDriver());
-		Log.info("User After Logged in that page URL is:  "+expectedURL);
-		Assert.assertEquals(actualURL, expectedURL);
-		Log.info("Current Page URL and Landing page URL Should be same");
-		
+		Log.startTestCase("Loginpgae Testcase started");
+		pages.enterorganizationID(organizationId);
+		Log.info("Organization ID successfuuly entererd");
+		pages.enterLoginData(Email, Password);
+		Log.info("Email ID and password successfuuly entererd");
 		Log.endTestCase("loginTest");
-
 	}
 
 }

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-17T17:32:26 IST" name="Suite1" finished-at="2022-07-17T17:32:39 IST" duration-ms="12424">
+  <suite started-at="2022-07-28T19:23:18 IST" name="Suite" finished-at="2022-07-28T19:23:52 IST" duration-ms="34000">
     <groups>
       <group name="Smoke">
-        <method signature="LoginTestCase.LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" name="LoginTc" class="com.myproject.loginTest.LoginTestCase"/>
+        <method signature="AddPatientDetails.addpatientDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" name="addpatientDetails" class="com.myproject.loginTest.AddPatientDetails"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-07-17T17:32:26 IST" name="Smoke" finished-at="2022-07-17T17:32:39 IST" duration-ms="12424">
-      <class name="com.myproject.loginTest.LoginTestCase">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:26 IST" name="loadConfig" finished-at="2022-07-17T17:32:26 IST" duration-ms="188" status="PASS">
+    <test started-at="2022-07-28T19:23:18 IST" name="Tes A" finished-at="2022-07-28T19:23:52 IST" duration-ms="34000">
+      <class name="com.myproject.loginTest.AddPatientDetails">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" started-at="2022-07-28T19:23:18 IST" name="loadConfig" finished-at="2022-07-28T19:23:18 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:27 IST" name="setup" finished-at="2022-07-17T17:32:32 IST" duration-ms="5543" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" started-at="2022-07-28T19:23:19 IST" name="setup" finished-at="2022-07-28T19:23:25 IST" duration-ms="6334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,31 +25,116 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTc(java.lang.String,java.lang.String)[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:32 IST" name="LoginTc" data-provider="credentials" finished-at="2022-07-17T17:32:39 IST" duration-ms="6344" status="PASS">
+        <test-method signature="addpatientDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" started-at="2022-07-28T19:23:25 IST" name="addpatientDetails" data-provider="addPatientDetails" finished-at="2022-07-28T19:23:52 IST" duration-ms="27147" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin ]]>
+                <![CDATA[vendortest100]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin123]]>
+                <![CDATA[mohapam@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwj&JGl$735A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kettan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Singh]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Janhit]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10/9/81]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Married]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Aadhar Card]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[897400987656]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Govt. Officer]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[4.563378298E9]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[8.700981234E9]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Kettansingh@gmail.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[No.12, Kamarajar Street,  Chennai]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[Office]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[Janhit Mein]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:39 IST" name="tearDown" finished-at="2022-07-17T17:32:39 IST" duration-ms="147" status="PASS">
+        </test-method> <!-- addpatientDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" started-at="2022-07-28T19:23:52 IST" name="tearDown" finished-at="2022-07-28T19:23:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myproject.loginTest.LoginTestCase@6e20b53a]" started-at="2022-07-17T17:32:39 IST" name="afterSuite" finished-at="2022-07-17T17:32:39 IST" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myproject.loginTest.AddPatientDetails@7fa98a66]" started-at="2022-07-28T19:23:52 IST" name="afterSuite" finished-at="2022-07-28T19:23:53 IST" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.myproject.loginTest.LoginTestCase -->
-    </test> <!-- Smoke -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- com.myproject.loginTest.AddPatientDetails -->
+    </test> <!-- Tes A -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -4,10 +4,10 @@
 	<listeners>
 		<listener class-name="com.myproject.utility.ListenerClass"></listener>
 	</listeners>
-	<test thread-count="1" name="Tes Login">
+	<test thread-count="1" name="Tes A">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.myproject.loginTest.LoginTestCase" />
+			<class name="com.myproject.loginTest.AddPatientDetails" />
 		</classes>
 	</test> <!-- Test -->
 
