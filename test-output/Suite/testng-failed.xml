@@ -11,11 +11,9 @@
         <methods>
           <include name="loadConfig"/>
           <include name="setup"/>
-          <include name="setup"/>
           <include name="afterSuite"/>
+          <include name="addpatientDetails" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="AddpatientDetails"/>
-          <include name="loginTestcase"/>
         </methods>
       </class> <!-- com.myproject.loginTest.AddPatientDetails -->
     </classes>

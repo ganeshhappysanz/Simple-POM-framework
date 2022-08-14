@@ -15,5 +15,8 @@ public interface ActionInterFace {
 	public void scrollByVisibilityOfElement(WebDriver driver, WebElement ele);
 	public boolean selectBySendkeys(String value,WebElement ele);
 	public boolean selectByValue(WebElement element,String value);
+	public boolean JSClick(WebDriver driver, WebElement ele);
+	public void fluentWait(WebDriver driver,WebElement element, int timeOut);
+	public void explicitWait(WebDriver driver, WebElement element, int timeOut );
 
 }

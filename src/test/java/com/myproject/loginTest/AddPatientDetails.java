@@ -29,7 +29,7 @@ public class AddPatientDetails extends Manipulation{
 	
 	@Test(groups = {"Smoke"},dataProvider = "addPatientDetails", dataProviderClass = DataProviders.class,priority = 2)
 	public void addpatientDetails(String organizationId, String Email, String Password,String FirstName, String MiddleName, String LastName, String DateOfBirth,
-			String Gender, String MaritalStatus, String Nationality, String ProofType, String ProofNumber,
+			String Gender, String MaritalStatus, String Nationality, String ProofType, String ProofNumber,String ProofUploadLocation,
 			String Occupation, String ReferenceId, String PhoneNumber, String EmailAddress, String Address, String Type,
 			String FathersName) throws Throwable {
 		
@@ -42,7 +42,7 @@ public class AddPatientDetails extends Manipulation{
 		Log.endTestCase("loginTest");
 		
 		addPatient = PageFactory.initElements(getDriver(), AddPatient.class);
-		addPatient.addPaientDetail(FirstName, MiddleName, LastName, DateOfBirth, Gender, MaritalStatus, Nationality, ProofType, ProofNumber, Occupation, ReferenceId, PhoneNumber, EmailAddress, Address, Type, FathersName);
+		addPatient.addPaientDetail(FirstName, MiddleName, LastName, DateOfBirth, Gender, MaritalStatus, Nationality, ProofType, ProofNumber,ProofUploadLocation, Occupation, ReferenceId, PhoneNumber, EmailAddress, Address, Type, FathersName);
 		Log.info("Patient details are successfuuly entererd");
 		Log.endTestCase("Add Pateint Test case");
 		

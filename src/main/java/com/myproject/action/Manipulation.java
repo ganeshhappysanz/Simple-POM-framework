@@ -2,6 +2,7 @@ package com.myproject.action;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
@@ -10,13 +11,21 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.myproject.actionInterface.ActionInterFace;
 import com.myproject.base.Baseclass;
 
 public class Manipulation extends Baseclass implements ActionInterFace {
 
+	public void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
+		WebDriverWait wait = new WebDriverWait(driver,timeOut);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
 	public boolean type(WebElement ele, String text) {
 		boolean flag = false;
 		try {
@@ -52,6 +61,46 @@ public class Manipulation extends Baseclass implements ActionInterFace {
 
 	}
 	
+	public void fluentWait(WebDriver driver,WebElement element, int timeOut) {
+	    Wait<WebDriver> wait = null;
+	    try {
+	        wait = new FluentWait<WebDriver>((WebDriver) driver)
+	        		.withTimeout(Duration.ofSeconds(20))
+	        	    .pollingEvery(Duration.ofSeconds(2))
+	        	    .ignoring(Exception.class);
+	        wait.until(ExpectedConditions.elementToBeSelected(element));
+	        element.click();
+	    }catch(Exception e) {
+	    }
+	}
+	
+	public boolean JSClick(WebDriver driver, WebElement ele) {
+		boolean flag = false;
+		try {
+			// WebElement element = driver.findElement(locator);
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", ele);
+			// driver.executeAsyncScript("arguments[0].click();", element);
+
+			flag = true;
+
+		}
+
+		catch (Exception e) {
+			throw e;
+
+		} finally {
+			if (flag) {
+				System.out.println("Click Action is performed");
+			} else if (!flag) {
+				System.out.println("Click Action is not performed");
+			}
+		}
+		return flag;
+	}
+	
+	
+	
 	public boolean selectByVisibleText(String visibletext, WebElement ele) {
 		boolean flag = false;
 		try {
@@ -63,7 +112,7 @@ public class Manipulation extends Baseclass implements ActionInterFace {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Option selected by VisibleText");
+				//System.out.println("Option selected by VisibleText");
 			} else {
 				System.out.println("Option not selected by VisibleText");
 			}
