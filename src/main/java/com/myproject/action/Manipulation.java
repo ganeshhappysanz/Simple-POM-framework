@@ -60,7 +60,7 @@ public class Manipulation extends Baseclass implements ActionInterFace {
 		}
 
 	}
-	
+	//test comments
 	public void fluentWait(WebDriver driver,WebElement element, int timeOut) {
 	    Wait<WebDriver> wait = null;
 	    try {
